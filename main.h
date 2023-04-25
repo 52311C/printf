@@ -3,7 +3,7 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-#include < stdlib>
+#include <stdlib.h>
 #include <unistd.h>
 
 #define UNUSED(x) (void)(x)
@@ -51,7 +51,7 @@ int print_percent(va_list types, char buffer[], int flags, int width,
 
 int print_int(va_list types, char buffer[], int flags, int width,
 		int precision, int size);
-int print_binary(va_list, types, char buffer[], int flags, int width,
+int print_binary(va_list types, char buffer[], int flags, int width,
 		int precision, int size);
 int print_unsigned(va_list types, char buffer[], int flags, int width,
 		int precision, int size);
@@ -76,7 +76,7 @@ int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 
-int print_reverse(va_list types, char buffer[], int flags, int width
+int print_reverse(va_list types, char buffer[], int flags, int width,
 		int precision, int size);
 
 int print_rot13string(va_list types, char buffer[], int flag, int width,
